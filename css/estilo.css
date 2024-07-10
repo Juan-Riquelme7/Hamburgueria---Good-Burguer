@@ -132,7 +132,7 @@ a {
     padding-right: 300px;
     padding-bottom: 300px;
     height: 700px;
-    animation: float 4s ease-in-out infinite;
+    animation: float 5s ease-in-out infinite;
 }
 
 @keyframes float {
