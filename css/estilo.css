@@ -1,0 +1,375 @@
+/* Importação das fontes pelo Google Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: var(--fonte-titulos);
+}
+
+body {
+    overflow-x: hidden;
+}
+
+:root {
+    --laranja: #ee964b;
+    --amarelo: #f4d35e;
+    --vermelho: #f95738;
+    --marrom: #3b2605;
+    --marrom-claro: #8c6117;
+    --fonte-titulos: Roboto;
+    --fonte-secundaria: Poppins;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
+header {
+    width: 100vw;
+    height: 100px;
+    align-items: center;
+    display: flex;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+
+ul {
+    display: flex;
+    gap: 60px;
+    list-style: none;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+li {
+    padding: 15px;
+}
+
+li:hover {
+    background-color: var(--marrom);
+    color: var(--amarelo);
+    border-radius: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--marrom);
+}
+
+.logo-tipografia {
+    font-size: 20px;
+    color: var(--marrom);
+}
+
+.logo-box {
+    position: absolute;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 100px;
+}
+
+.quadrante-primeiro {
+    margin-top: 100px;
+    display: flex;
+    height: 600px;
+    align-items: center;
+}
+
+.texto-quadrante {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 50vw;
+    gap: 20px;
+    padding-left: 200px;
+}
+
+.titulo {
+    width: max-content;
+    font-size: 80px;
+    color: #3b2605;
+}
+
+.img-quadrante {
+    display: flex;
+    padding-top: 150px;
+    margin-right: 100px;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--marrom);
+    height: 450px;
+    border-radius: 100%;
+    width: 800px;
+}
+
+.pri-paragrafo {
+    word-wrap: break-word;
+    width: 450px;
+    font-size: 24px;
+}
+
+.hamburguer {
+    width: 800px;
+    height: 800px;
+    z-index: 2;
+}
+
+.batata {
+    position: absolute;
+    padding-right: 300px;
+    padding-bottom: 300px;
+    height: 700px;
+    animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+.hamburguer-box {
+    z-index: 2;
+    display: flex;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+    border-radius: 10% 30%;
+    padding-bottom: 150px;
+}
+
+.segundo-quadrante {
+    margin-top: 150px;
+    margin-bottom: 100px;
+}
+
+.lanches-cards {
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+}
+
+.hamburguer-card-img {
+    width: 450px;
+    height: 350px;
+}
+
+.titulo-card {
+    color: var(--marrom);
+    text-align: center;
+}
+
+.card-info {
+    text-align: center;
+    margin-top: 20px;
+    width: 450px;
+}
+
+.saiba-mais {
+    margin-top: 10px;
+    width: 170px;
+    height: 50px;
+    font-weight: 700;
+    border-radius: 30px;
+    background-color: var(--marrom);
+    color: var(--amarelo);
+    font-size: 16px;
+    border: none;
+}
+
+span {
+    width: 70px;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 20px;
+    color: var(--marrom);
+    font-size: 14px;
+    font-weight: 700;
+    background-color: var(--amarelo);
+    padding: 10px;
+}
+
+.exemplo-img {
+    z-index: 0;
+    display: flex;
+    width: 500px;
+    height: 600px;
+    border-radius: 10px 0 0 10px;
+}
+
+.caracteristicas {
+    display: flex;
+    justify-content: center;
+    display: flex;
+    margin-top: 200px;
+}
+
+.linha-vertical {
+    background-color: var(--marrom);
+    width: 15px;
+    height: 600px;
+    border-radius: 0 10px 10px 0;
+}
+
+.linha-horizontal {
+    background-color: var(--marrom);
+    width: 300px;
+    height: 15px;
+    border-radius: 0 10px 10px 0;
+}
+
+.linha-horizontal-2 {
+    background-color: var(--marrom);
+    width: 300px;
+    height: 15px;
+    border-radius: 0 10px 10px 0;
+}
+
+.linha-horizontal-3 {
+    background-color: var(--marrom);
+    width: 300px;
+    height: 15px;
+    border-radius: 0 10px 10px 0;
+}
+
+.linhas {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.linha-texto {
+    display: flex;
+    align-items: center;
+}
+
+.texto-indicado {
+    width: 500px;
+    margin-left: 30px;
+}
+
+.molho {
+    position: absolute;
+    z-index: -1;
+    transform: rotate(-120deg);
+}
+
+
+/* Footer */
+
+footer {
+    margin-top: 300px;
+    display: flex;
+    background-color: var(--marrom);
+    width: 100vw;
+    height: 555px;
+    justify-content: center;
+    align-items: center;
+}
+
+#sobre-nos {
+    height: 224px;
+}
+
+.rodape-infos {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin: 0px 30px 0 50px;
+    border-right: 1px solid var(--amarelo);
+    padding-right: 70px;
+}
+
+.rodape-infos h1 {
+    font-family: "Raleway SemiBold", "Raleway", sans-serif;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 28px;
+    line-height: normal;
+}
+
+.rodape-infos h2 {
+    font-family: "Raleway Medium", "Raleway", sans-serif;
+    font-weight: 500;
+    color: #ffffff;
+    line-height: normal;
+    font-size: 20px;
+}
+
+.rodape-contatos h2 {
+    font-family: "Raleway Medium", "Raleway", sans-serif;
+    font-weight: 500;
+    color: #ffffff;
+    line-height: normal;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.rodape-contatos {
+    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.rodape-contatos i {
+    color: white;
+    font-size: 20px;
+}
+
+.logo-rodape {
+    display: flex;
+    margin-right: 80px;
+}
+
+.logo-rodape img {
+    width: 250px;
+    height: 250px;
+}
+
+.item-icon {
+    align-items: center;
+    display: flex;
+}
+
+.icons-contatos {
+    display: flex;
+    gap: 15px;
+    margin: 30px 0 30px 0;
+}
+
+h2.direitos-rodape {
+    margin: 0;
+}
+
+
+
+
